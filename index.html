@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fairuz Kanza Amira - Portfolio Animation</title>
+
+  <!-- GSAP & ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">FAIRUZ<span>.</span></div>
+    <nav>
+      <a href="#hero">Beranda</a>
+      <a href="#projects">Proyek</a>
+      <a href="#expertise">Keahlian</a>
+      <a href="#experience">Pengalaman</a>
+      <a href="#certificates">Sertifikat</a>
+      <a href="#contact">Kontak</a>
+    </nav>
+
+    <button id="btnToggleTema" class="btn-tema">
+        Mode Terang ☀️
+    </button>
+    
+    <a href="#contact" class="btn-contact">HUBUNGI SAYA</a>
+  </header>
+
+  <!-- Section 1: Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-text gsap-hero">
+      <p class="hero-tag">Hallo Semua!</p>
+      <h1 class="hero-title">FAIRUZ<br><span>KANZA AMIRA.</span></h1>
+      <p class="hero-desc">
+        Saya adalah siswa kelas 10 di SMKN 1 Kepanjen jurusan Rekayasa Perangkat Lunak (RPL). Saya memiliki minat besar dalam pengembangan web, khususnya pembuatan antarmuka (front-end) yang estetik, bersih, dan nyaman diakses di berbagai perangkat.
+      </p>
+    </div>
+
+    <div class="hero-img-box gsap-hero">
+      <img src="image.png" alt="Foto Fairuz Kanza Amira">
+    </div>
+  </section>
+
+  <!-- Horizontal Scroll (3 Panel Utama Saja) -->
+  <div class="horizontal-wrapper">
+    <div class="horizontal-container">
+      
+      <!-- Panel 1: Portofolio Proyek -->
+      <div class="panel" id="projects">
+        <p style="color:#A8834A; font-weight:bold; letter-spacing:1px;">PORTOFOLIO</p>
+        <h2>PROYEK YANG PERNAH<br><span>DIKERJAKAN.</span></h2>
+        
+        <div class="grid-projects">
+          <div class="project-card">
+            <img src="P1.png" class="project-img" alt="Proyek 1">
+            <div class="project-info">
+              <h4>Junior Web Developer Industry Class MODUL 1</h4>
+              <p>Portofolio pertama saya, yang dibangun dari nol sembari mempelajari dasar-dasar frontend, struktur HTML, dan penataan gaya dark mode.</p>
+              <a href="https://tugas-1-smkn1kepanjen-umber.vercel.app/" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="P2.png" class="project-img" alt="Proyek 2">
+            <div class="project-info">
+              <h4>Mobile Responsive MODUL 2</h4>
+              <p>Latihan desain web responsif dengan tata letak yang fleksibel, breakpoint desktop, status hover, dan pemeriksaan Lighthouse.</p>
+              <a href="https://tugas-2-smkn1kepanjen-five.vercel.app/" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <img src="P3.png" class="project-img" alt="Proyek 3">
+            <div class="project-info">
+              <h4>Interactive Digital Profile MODUL 3</h4>
+              <p>Portofolio interaktif menggunakan event JavaScript untuk penukaran tema, sapaan dinamis, dan avatar yang dianimasikan.</p>
+              <a href="https://tugas-3-smkn1kepanjen-delta.vercel.app/" class="project-link">Lihat Detail →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Keahlian & Workflow -->
+      <div class="panel" id="expertise">
+        <p style="color:#A8834A; font-weight:bold; letter-spacing:1px;">KEAHLIAN & ALUR KERJA</p>
+        <h2>Perangkat dan praktik<br>yang saya kembangkan<br><span> saat membangun proyek web.</span></h2>
+        <div class="grid-cards">
+          <div class="card">
+            <h4>01. HTML5</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Struktur dasar halaman web.</p>
+          </div>
+          <div class="card">
+            <h4>02. CSS3</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Membuat tampilan web yang menarik dan interaktif.</p>
+          </div>
+          <div class="card">
+            <h4>03. JavaScript</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Menambahkan interaktivitas dan logika pada halaman web.</p>
+          </div>
+          <div class="card">
+            <h4>04. Git & GitHub</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Mengelola versi kode dan berkolaborasi dalam proyek.</p>
+        </div>
+      </div>
+    </div> 
+
+      <!-- Panel 3: Fokus Utama -->
+      <div class="panel">
+        <p style="color:#A8834A; font-weight:bold; letter-spacing:1px;">FOKUS UTAMA</p>
+        <h2>MENCIPTAKAN TAMPILAN<br><span>BERKUALITAS.</span></h2>
+        <div class="grid-cards">
+          <div class="card">
+            <h4>UI/UX LAYOUT DESIGN</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Penyusunan tata letak yang rapi, estetis, elegan, dan nyaman dipandang pengguna.</p>
+          </div>
+          <div class="card">
+            <h4>INTERACTIVE ANIMATION</h4>
+            <p style="font-size:13px; color:#F5F2ED; opacity:0.8;">Penerapan efek animasi halus pada elemen antarmuka untuk pengalaman pengguna yang menyenangkan.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION TAMBAHAN VERTIKAL (Di-scroll ke bawah biasa) -->
+
+  <!-- Section: Edukasi & Pengalaman -->
+  <section class="vertical-section gsap-fade" id="experience">
+    <p style="color:#A8834A; font-weight:bold; letter-spacing:1px;">REKAM JEJAK</p>
+    <h2 class="section-title">EDUKASI & <span>PENGALAMAN.</span></h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h4>SMKN 1 KEPANJEN — RPL</h4>
+        <p style="font-size:14px; color:#F5F2ED; opacity:0.8; line-height:1.6;">Mempelajari dasar algoritma, pemrograman berorientasi objek, basis data, serta pemrograman web Front-End.</p>
+      </div>
+      <div class="card">
+        <h4>PENGEMBANGAN PROYEK WEB SEKOLAH</h4>
+        <p style="font-size:14px; color:#F5F2ED; opacity:0.8; line-height:1.6;">Berpartisipasi aktif dalam perancangan tampilan dan struktur koding untuk tugas kelompok maupun individu.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Sertifikat & Pencapaian -->
+  <section class="vertical-section gsap-fade" id="certificates">
+    <p style="color:#A8834A; font-weight:bold; letter-spacing:1px;">PENCAPAIAN</p>
+    <h2 class="section-title">SERTIFIKAT & <span>KUALIFIKASI.</span></h2>
+    <div class="grid-cards">
+      <div class="card">
+        <h4>FRONT-END WEB DEVELOPMENT</h4>
+        <p style="font-size:14px; color:#F5F2ED; opacity:0.8; line-height:1.6;">Sertifikasi penyelesaian modul HTML5, CSS3, dan JavaScript interaktif dasar hingga lanjut.</p>
+      </div>
+      <div class="card">
+        <h4>GIT & VERSION CONTROL WORKFLOW</h4>
+        <p style="font-size:14px; color:#F5F2ED; opacity:0.8; line-height:1.6;">Pemahaman mendalam mengenai penggunaan terminal Git, kolaborasi di GitHub, dan deployment otomatis Vercel.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section Final: Form & Media Sosial -->
+  <section class="vertical-section" id="contact" style="border-bottom:none; padding-top:100px;">
+    <div class="contact-container gsap-fade">
+      <p style="color:#A8834A; font-weight:bold; text-align:center; margin-bottom:10px;">KONTAK & MEDIA SOSIAL</p>
+      <h2 style="font-size:40px; text-align:center; font-weight:900; margin-bottom:25px; color:#F5F2ED;">MARI BEKERJA SAMA DAN<br>BERHUBUNGAN.</h2>
+      
+      <div class="social-links">
+        <a href="mailto:email@domain.com" class="social-btn">✉ Email</a>
+        <a href="https://instagram.com" target="_blank" class="social-btn">📷 Instagram</a>
+        <a href="https://github.com" target="_blank" class="social-btn">💻 GitHub</a>
+      </div>
+
+      <form onsubmit="event.preventDefault();">
+        <div class="form-group">
+          <input type="text" placeholder="Nama Lengkap" required>
+        </div>
+        <div class="form-group">
+          <input type="email" placeholder="Alamat Email" required>
+        </div>
+        <div class="form-group">
+          <textarea rows="5" placeholder="Tuliskan pesan atau penawaran proyek..." required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">KIRIM PESAN ✦</button>
+      </form>
+    </div>
+
+    <!-- End Big Logo Footer -->
+    <div class="footer-title gsap-fade">
+      FAIRUZ<span>.</span>
+    </div>
+  </section>
+<script src="script.js"></script>
+</body>
+</html>
